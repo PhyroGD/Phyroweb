@@ -1,0 +1,83 @@
+html {
+	font: normal 16px roboto;
+	color: #FFF;
+	background-color: #E6E6E6;
+	max-width: 100%;
+	scroll-behavior: smooth;
+}
+body {
+	margin: auto;
+	top: 0px;
+}
+/* CABECERA */
+header {
+	background-color: #FFF;
+	text-align: center;
+	height: 120px;
+}
+.logo {
+	margin-top: 30px;
+}
+section {
+	color: #000;
+	text-align: center;
+	margin-top: 10px;
+}
+article {
+	margin:auto;
+	margin-bottom: 20px;
+	max-width: 80%;
+	color: #000;
+	text-align: justify;
+}
+
+/* ASIDE Y PIE*/
+aside {
+	left: 1270px;
+	text-align: center;
+	padding: 30px 0px 30px 0px;
+	background-color: #454545;
+	box-shadow: 5px 0px 10px #454545;
+	z-index: 90;
+	}
+aside a {
+	color: #E5E5E5;
+	padding: 0px 25px 0px 25px;
+}
+
+aside img {
+	transition: all 0.5s ease 0s;
+}
+aside img:hover {
+	transform: scale(1.2);
+}
+
+footer {
+	margin: auto;
+	color: #E5E5E5;
+	background-color: #323232;
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+	box-shadow: 5px 0px 10px #323232;
+	z-index: 100;
+}
+footer a{
+	color: #E5E5E5;
+	text-decoration: none;
+}
+
+/* BOTON */
+#iconup{
+	position: fixed;
+	right: 25px;
+	bottom: 0px;
+	scroll-behavior: smooth;
+}
+#iconup:hover
+{
+	transform: rotate(360deg);
+	transition: all 0.5s ease 0s;
+	-webkit-transform: rotate(360deg); 	
+}
+
+ 

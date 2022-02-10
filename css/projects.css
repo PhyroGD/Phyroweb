@@ -1,0 +1,83 @@
+.imgback {
+	background: url(../images/imgback3.jpg) no-repeat bottom center;
+    background-size: cover;
+	padding: 150px 0px;
+	margin-bottom: 50px;
+	z-index: -99;
+}
+article {
+	margin:auto;
+	margin-bottom: 20px;
+	max-width: 80%;
+	color: #000;
+	text-align: center;
+	margin-top: -50px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.project{
+	margin: 5px;
+	z-index: -80;
+	/* float: left; */
+	transition: .5s all ease;
+	box-shadow: 1px 1px 10px grey;
+}
+
+.contenedor{
+	/* border: 3px solid silver; */
+	overflow: hidden;
+	/* transition: .5s all ease; */
+}
+
+.proyecto{
+	position: relative;
+	float: left;
+	/* cursor: pointer; */
+	/* display: flow; */
+	text-align: center;
+	font-weight: bold;
+	margin: 0.5em;
+	height: 325px;
+	width:275px;
+	/* transition: .5s all ease; */
+	/* border: 2px solid red; */
+}
+
+/* .titulo_proyecto:before{ */
+	/* content: ""; */
+	/* position: absolute; */
+	/* transition: opacity .5s all ease; */
+/* } */
+
+.enlace_proyecto{
+	transition: all 0.3s ease 0s;
+}
+.enlace_proyecto:hover:before{
+	content: url("img/goesto.jpg");
+	position: absolute;
+	/* border: 2px solid blue; */
+	/* transition: all 0.3s ease 0s; */
+	top: 5px;
+	bottom: 5px;
+	left: 5px;
+	right: 5px;
+	display: block;
+}
+
+.others{
+	margin: 5px;
+	transition: all 0.5s ease 0s;
+	border-radius: 50%;
+}
+
+.others:hover{
+	transform: scale(1.1);
+	box-shadow: 1px 1px 5px grey;
+}
+
+h2 {
+	text-align: center;
+	font: bold 60px roboto;
+	color: black;
+}

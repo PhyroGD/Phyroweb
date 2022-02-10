@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Phyro Graphic Design</title>
+		<meta charset="utf-8" />
+		<meta name="descrption" content="Proyecto final" />
+		<meta name="keywords" content="html,css,javascript,repaso,labora,formación" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/template.css" /> <!-- CSS general-->
+		<link rel="stylesheet" href="css/jmenu.min.css" /> <!-- CSS Menu responsive-->
+		<link rel="stylesheet" href="css/index.css" /> <!-- CSS Index-->
+		<link rel="shortcut icon" href="images/favicon.png" />
+		<script type="text/javascript" src="js/index.js"></script>
+		<noscript>
+			<h2>Esta página requiere JavaScript</h2>
+			<p>Activa las funciones JavaScript para seguir navegando por esta página sin problemas.</p>
+		</noscript>
+	</head>
+	<body>
+		<header>
+		<a href="index.html" ><img src="images/header.png" class="logo" style="max-width:100%;height:auto;" title="Ir al Inicio" alt="Logo Web" /></a>
+		</header>
+			<nav class="jmenu">
+			  <label for="menu-btn" class="jm-menu-btn jm-icon-menu"></label>
+			  <input type="checkbox" id="menu-btn" class="jm-menu-btn">
+			  <ul class="jm-collapse">
+				<li><a href="aboutme.html">Sobre Mi</a></li>
+				<li>
+				  <a href="projects.html">Mis Trabajos</a>
+				</li>
+				<li><a href="glosary.html">Glosario</a></li>
+				<li><a href="contact.html">Contacto</a></li>
+			  </ul>
+			</nav>
+		<div class="intro">
+			<h1>BIEN<wbr>VE<wbr>NIDO</h1>
+		</div>
+		<section>
+			<article>
+				<h2>NUESTROS VALORES</h2>
+				<div class="img_index">
+					<img src="images/img_index1.png" alt="index1" title="Profesionalidad" style="max-width:40%;height:auto;"/><h3>Profesionalidad</h3><p>Todo nuestro saber hacer en cada proyecto.</p>
+				</div>
+				<div class="img_index">
+					<img src="images/img_index2.png" alt="index2" title="Tranparencia" style="max-width:40%;height:auto;"/><h3>Transparencia</h3><p>Sinceridad con nuestros clientes.</p>
+				</div>
+				<div class="img_index">
+					<img src="images/img_index3.png" alt="index3" title="Creatividad" style="max-width:40%;height:auto;"/>
+					<h3>Creatividad</h3><p>Lo mejor de nuestras mentes a tu disposición.</p>
+				</div>
+				<div class="img_index">
+					<img src="images/img_index4.png" alt="index4" title="Compromiso" style="max-width:40%;height:auto;"/><h3>Compromiso</h3><p>Nunca te sentiras defraudado.</p>
+				</div>
+				<div class="img_index">
+					<img src="images/img_index5.png" alt="index5" title="Versatilidad" style="max-width:40%;height:auto;"/><h3>Versatilidad</h3><p>Nos adaptamos a cualquier situación.</p>
+				</div>
+				<div class="img_index">
+					<img src="images/img_index6.png" alt="index6" title="Diferenciación" style="max-width:40%;height:auto;"/><h3>Diferenciación</h3><p>Destacaras entre el resto gracias a nosotros.</p>
+				</div>
+			</article>
+		</section>
+		<div class="intro" > <!-- Slider de comentarios aqui-->
+			<h2>CLIENTES SATISFECHOS</h2> <!-- Work in progress-->
+			<!-- Slideshow container -->
+				<div class="slideshow-container" onload="showSlides()">
+
+				  <!-- Full-width images with number and caption text -->
+				  <div class="mySlides fade">
+					<!-- <div class="numbertext">1 / 4</div>				 -->
+					<div class="comment">
+					<h3>Ariel P. Agular</h3>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus, orci vel congue molestie, mauris erat sollicitudin quam, quis cursus augue neque et mi."</p>
+					</div>
+					<div>
+						<img src="images/arielp.jpg" class="profile"  onload="currentSlide(1)"/>
+					</div>
+				  </div>
+
+				  <div class="mySlides fade">
+					<div class="comment">
+					<h3>J.R. Cascales</h3>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus, orci vel congue molestie, mauris erat sollicitudin quam, quis cursus augue neque et mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus, orci vel congue molestie, mauris erat sollicitudin quam, quis cursus augue neque et mi."</p>
+					</div>
+					<div>
+						<img src="images/jrcascales.jpg" class="profile" >
+					</div>
+				  </div>
+
+				  <div class="mySlides fade">
+					<div class="comment">
+					<h3>Mixel Music</h3>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus, orci vel congue molestie, mauris erat sollicitudin quam, quis cursus augue neque et mi."</p>
+					</div>
+					<div>
+						<img src="images/mixel.jpg" class="profile" >
+					</div>
+				  </div>
+				  
+				  <div class="mySlides fade">
+					<div class="comment">
+					<h3>Víctor Romero</h3>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus"</p>
+					</div>
+					<div>
+						<img src="images/vromero.jpg" class="profile" >
+					</div>
+				  </div>
+
+				  <!-- Next and previous buttons -->
+				  <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+				  <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+				</div>
+				<br>
+
+				<!-- The dots/circles -->
+				<!-- <div style="text-align:center"> -->
+				  <!-- <span class="dot" onclick="currentSlide(1)"></span> -->
+				  <!-- <span class="dot" onclick="currentSlide(2)"></span> -->
+				  <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+				  <!-- <span class="dot" onclick="currentSlide(4)"></span> -->
+				<!-- </div> -->
+		</div>
+		<aside>
+			<a href="https://twitter.com/phyrogd" target="_blank" title="Twitter"><img src="images/icontw.png"/ width="35px" height="35px" style="max-width:25%;height:auto" alt="Twitter" /></a>
+			<a href="https://www.domestika.org/es/phyrogd" target="_blank" title="Domestika"><img src="images/icondo.png"/ width="35px" height="35px" style="max-width:25%;height:auto" alt="Domestika" /></a>
+			<a href="https://www.instagram.com/phyrogd/?hl=es" target="_blank" title="Instagram"><img src="images/iconit.png"/ width="35px" height="35px" style="max-width:25%;height:auto" alt="Instagram" /></a>
+			<a href="https://es.linkedin.com/in/francisco-javier-fuentes-alonso-921b23160" target="_blank" title="Linkedin"><img src="images/iconlk.png"/ width="35px" height="35px" style="max-width:25%;height:auto" alt="Linkedin" /></a>
+		</aside>
+		<footer>
+			<small>Fº Javier Fuentes Alonso &copy 2021-2022</small>	-	<small><a href="index.html">www.phyrogd.es</a></small>	-	<small><a href="privacy.html">Política de privacidad</a></small>	-	<small><a href="legal.html">Aviso legal</a></small>	-	<small><a href="cookies.html">Política de cookies</a></small>	-	<small><a href="credits.html">Atribuciones</a></small>
+		</footer>
+		<a id="iconup" href="#" title="Ir arriba"><img src="images/iconup.png"/ width="45px" height="45px" alt="Ir arriba" /></a>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+/* CUERPO */
+section {
+	color: #000;
+	background-color: #E6E6E6;
+	text-align: center;
+}
+.imgback {
+	background: url(../images/imgback4.jpg) no-repeat bottom center;
+    background-size: cover;
+	padding: 150px 0px;
+	margin-bottom: 50px;
+	z-index: -99;
+}
+article {
+	margin:auto;
+	margin-bottom: 20px;
+	max-width: 80%;
+	color: #000;
+	text-align: justify;
+}
+h2 {
+	text-align: center;
+	font: bold 60px roboto;
+	color: black;
+}
+.lista, .lista a{
+	list-style: none;
+    display: inline-block;
+	text-decoration: none;
+	color: black;
+}
+ul.lista li{
+    float: left;
+	padding: 0px 20px;
+	font-weight: bold;
+}

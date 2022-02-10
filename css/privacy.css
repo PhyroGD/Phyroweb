@@ -1,0 +1,22 @@
+/* CUERPO */
+section {
+	color: #000;
+	background-color: #E6E6E6;
+}
+article {
+	margin:auto;
+	margin-bottom: 20px;
+	max-width: 80%;
+	color: #000;
+	text-align: justify;
+}
+h2 {
+	text-align: center;
+	font: bold 30px roboto;
+}
+h3 {
+	font: bold 22px roboto;
+}
+/* article a{
+	color: #FFF;
+} */

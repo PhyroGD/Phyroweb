@@ -1,0 +1,94 @@
+/* JMenu 1.0 RC1 | MIT License | https://github.com/jamesjohnson280/JMenu */
+
+/* Menu bar and fonts */
+.jmenu {
+  background: #ef790b;
+  box-shadow: 5px 5px 10px #454545;
+  box-sizing: border-box;
+  line-height: 1;
+  width: 100%;
+  z-index: 999;
+  position: relative;
+  /* margin-bottom: 40px; */
+}
+
+/* Menu Button */
+input.jm-menu-btn {
+  display: none; /* Hide the checkbox */
+}
+
+input[type='checkbox'].jm-menu-btn ~ .jm-collapse {
+  display: none; /* Hide menu on load */
+}
+
+input[type='checkbox']:checked.jm-menu-btn ~ .jm-collapse {
+  display: block; /* Open when menu button is clicked */
+}
+
+label.jm-menu-btn {
+  color: #fff; 
+  cursor: pointer;
+  display: block;
+  padding: 16px 32px;
+}
+
+label.jm-menu-btn:hover {
+  color: #fff;
+}
+
+/* Menu Items */
+.jmenu ul,
+.jmenu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Links */
+.jmenu a {
+  color: #FFF; /* Light gray */
+  display: inline-block;
+  padding: 16px 32px;
+  text-decoration: none;
+  font: bold 1.125em/1.5 'Roboto', sans-serif;
+  transition: all 0.2s ease 0s;
+}
+
+.jmenu a:hover {
+  color: #505050; /* White */
+}
+
+/* Submenu Items */
+.jmenu ul ul {
+  display: none; /* Hidden by default */
+}
+
+/* Icons */
+
+.jm-icon-menu::before {
+  content: '\2630';
+}
+
+@media (min-width: 550px) {
+
+  /* Menu items */
+  .jmenu li {
+    display: inline-block;
+	text-align: left;
+  }
+  
+  .jmenu a {
+    padding: 16px;
+  }
+  /* Menu Button */
+  input.jm-menu-btn,
+  label.jm-menu-btn {
+    display: none; /* Hide menu button */
+  }
+  
+  input[type='checkbox'].jm-menu-btn ~ .jm-collapse,
+  .jm-collapse {
+    display: block; /* Show menu */
+  }
+}

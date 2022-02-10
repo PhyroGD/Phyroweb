@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Phyro Graphic Design</title>
+		<meta charset="utf-8" />
+		<meta name="descrption" content="Proyecto final" />
+		<meta name="keywords" content="html,css,javascript,repaso,labora,formación" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/contact.css" />
+		<link rel="stylesheet" href="css/template.css" />
+		<link rel="stylesheet" href="css/jmenu.min.css">
+		<link rel="shortcut icon" href="images/favicon.png"/>
+		<script type="text/javascript" src="js/validation.js"></script>
+		<noscript>
+			<h2>Esta página requiere JavaScript</h2>
+			<p>Activa las funciones JavaScript para seguir navegando por esta página sin problemas.</p>
+		</noscript>
+	</head>
+	<body>
+		<header>
+		<a href="index.html" ><img src="images/header.png" class="logo" style="max-width:100%;height:auto;" title="Ir al Inicio" alt="Logo Web" /></a>
+		</header>
+			<nav class="jmenu">
+			  <label for="menu-btn" class="jm-menu-btn jm-icon-menu"></label>
+			  <input type="checkbox" id="menu-btn" class="jm-menu-btn">
+			  <ul class="jm-collapse">
+				<li><a href="aboutme.html">Sobre Mi</a></li>
+				<li>
+				  <a href="projects.html">Mis Trabajos</a>
+				</li>
+				<li><a href="glosary.html">Glosario</a></li>
+				<li><a href="contact.html">Contacto</a></li>
+			  </ul>
+			</nav>
+		<div class="imgback">
+			<h2>Contacta con nosotros</h2>
+		</div>
+		<section>
+			<article>
+				<form name="contacto" onsubmit="return validarFormulario()" action="mailto:javifuentesalonso11@gmail.com" method="post" >
+					<input type="text" placeholder="Nombre*" id="nombre" class="field nombre" onblur="validarNombre()" title="Escriba su nombre"/> <!--pattern="([A-Za-z]+[\s]{1}[A-Za-z]?+)" -->
+					<input type="text" placeholder="Apellido*" id="apellido" class="field apellido" onblur="validarApellido()" title="Escriba sus apellidos" /> <!-- pattern="([A-Za-z]+[\s]{1}[A-za-z]?+)"  -->
+					<input type="email" placeholder="E-mail*" id="email" class="field email" onblur="validarEmail()" title="Escriba su email"  /> <!-- pattern="/^\w+([.-]\w+)*@\w+([.-]\w+)*\.\w{2,4}$/"  -->
+					<input type="text" placeholder="Empresa" id="empresa" class="field empresa" title="Escriba el nombre de su empresa" onblur="validarEmpresa()"/>
+					<input type="text" placeholder="Telefono" id="telefono" class="field telefono" onblur="validarTelefono()" maxlength="9" title="Solo números Ej: 000000000"/> <!-- pattern="[0-9]{9}" -->
+					<input type="text" placeholder="Código Postal" id="postal" class="field postal" onblur="validarCPostal()" pattern="[0-9]{5}" maxlength="5" title="Solo números. Ej: 00000"/>
+					<select name="Solicitud" placeholder="Solicitud*" id="solicitud" class="select solcitud" title="Tipo de solicitud" alt="Tipo de solicitud" onchange="validarSelect()" >
+						<option disabled selected> &#8213; Tipo de solicitud &#8213;</option>
+						<option value="empty">-</option>
+						<option value="work">Encargo</option>
+						<option value="info">Información o Consulta</option>
+						<option value="colaborate">Colaboración</option>
+						<option value="other">Otro</option>
+					</select>
+					<textarea placeholder="Por favor, escriba aqui su peticion. Este campo no puede estar vacio*" id="textarea" rows="15" class="textarea" cols="70" max-width="50%" title="Explícanos un poquito que quieres" onblur="validarTextarea()"></textarea>
+					<input type="checkbox" class="check" id="checkob" class="check" name="checkob" /><label>Acepto la <a href="privacy.html" title="Política de privacidad" target="_black">política de privacidad.*</a></label>
+					<span id="mensaje_checkbox1" class="resultadoError"></span>
+						<br>
+					<input type="checkbox" id="checkop" class="check" name="checkop" /><label>Deseo recibir información adicional.</label>
+					<span id="mensaje_checkbox2" class=""></span>
+						<br>
+					<input type="submit" name="Enviar" value="Enviar" title="¿Todo correcto? Haz click, no muerdo :)" class="button" onmouseover="validarCheckbox()" onclick="validarCheckboxOp()" /> <input type="reset" name="limpiar" value="Limpiar" class="button" title="Limpiar el formulario" />
+					<span id="resultado" class="resultadoError"></span>
+					<p class="order">Campos obligatorios*</p>
+				</form>
+			</article>
+				<h2>Puedes encontrarnos aquí</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d401837.6839300304!2d-1.1510205953686699!3d38.108630372320675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63991a241b2287%3A0x5e11dbe8d563f7ba!2sOrihuela%2C%20Alicante!5e0!3m2!1ses!2ses!4v1632902043294!5m2!1ses!2ses" allowfullscreen="" loading="lazy" class="map"></iframe>
+		</section>
+		<aside>
+			<a href="https://twitter.com/phyrogd" target="_blank" title="Twitter"><img src="images/icontw.png"/ width="35px" height="35px" style="max-width:25%;height:auto" alt="Twitter" /></a>
+			<a href="https://www.domestika.org/es/phyrogd" target="_blank" title="Domestika"><img src="images/icondo.png"/ width="35px" height="35px" style="max-width:25%;height:auto" alt="Domestika" /></a>
+			<a href="https://www.instagram.com/phyrogd/?hl=es" target="_blank" title="Instagram"><img src="images/iconit.png"/ width="35px" height="35px" style="max-width:25%;height:auto" alt="Instagram" /></a>
+			<a href="https://es.linkedin.com/in/francisco-javier-fuentes-alonso-921b23160" target="_blank" title="Linkedin"><img src="images/iconlk.png"/ width="35px" height="35px" style="max-width:25%;height:auto" alt="Linkedin" /></a>
+		</aside>
+		<footer>
+			<small>Fº Javier Fuentes Alonso &copy 2021-2022</small>	-	<small><a href="index.html">www.phyrogd.es</a></small>	-	<small><a href="privacy.html">Política de privacidad</a></small>	-	<small><a href="legal.html">Aviso legal</a></small>	-	<small><a href="cookies.html">Política de cookies</a></small>	-	<small><a href="credits.html">Atribuciones</a></small>
+		</footer>
+		<a id="iconup" href="#" title="Ir arriba"><img src="images/iconup.png"/ width="45px" height="45px" alt="Ir arriba" /></a>
+	</body>
+</html>
